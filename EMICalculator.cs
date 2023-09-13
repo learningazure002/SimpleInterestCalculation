@@ -4,7 +4,7 @@ using System;
 public class EMICalculator {
 	
 	// Function to calculate EMI
-	static float GetCalculatedEmi(float principalAmount, float rateOfIntrest, float timeInYear)
+	public static float GetCalculatedEmi(float principalAmount, float rateOfIntrest, float timeInYear)
 	{
 		float emi;
 	
@@ -34,9 +34,9 @@ public class EMIModel{
   public float RateOfIntrest {get; set;} 
   public float TimeInYear {get; set;}
   
-  public EMIModel(float principalAmount, float rateOfIntrest, float timeInYear){
-    PrincipalAmount = principalAmount;
-    RateOfIntrest= rateOfIntrest;
-    TimeInYear = timeInYear;
-  }
+//   public EMIModel(float principalAmount, float rateOfIntrest, float timeInYear){
+//     PrincipalAmount = principalAmount;
+//     RateOfIntrest= rateOfIntrest;
+//     TimeInYear = timeInYear;
+//   }
 }
