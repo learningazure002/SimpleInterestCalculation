@@ -21,7 +21,7 @@ namespace AzFuncLoanCalculation
             InterestCalculation input = JsonConvert.DeserializeObject<InterestCalculation>(requestBody);
             var totalInterest = input.PrincipleAmount * input.NoOfYear * input.RateOfInterest / 100;
             var totalAmount = input.PrincipleAmount + totalInterest;
-            return new OkObjectResult($" Total Interest : {totalInterest} \n Total Amount to pay : {totalAmount}");
+            return new OkObjectResult($" Total Interest Incurred : {totalInterest} \n Final Amount to pay : {totalAmount}");
         }
     }
 
