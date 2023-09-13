@@ -20,7 +20,7 @@ namespace AzFuncLoanCalculation
             string requestBody = await new StreamReader(req.Body).ReadToEndAsync();
 
             var emiModel = JsonConvert.DeserializeObject<EMIModel>(requestBody);
-            var emi = EMICalculator.GetCalculatedEmi(emiModel.principalAmount, emiModel.rateOfIntrest, emiModel.TimeInYear);
+            var emi = EMICalculator.GetCalculatedEmi(emiModel.PrincipalAmount, emiModel.RateOfIntrest, emiModel.TimeInYear);
 
             return new OkObjectResult($" Your EMI per month is : {emi}");
         }
