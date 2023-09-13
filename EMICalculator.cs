@@ -9,8 +9,8 @@ public class EMICalculator {
 		float emi;
 	
 		rateOfIntrest = rateOfIntrest / (12 * 100); // one month interest
-		t = t * 12; // one month period
-		emi = (principalAmount * rateOfIntrest * (float)Math.Pow(1 + rateOfIntrest, ))
+		timeInYear = timeInYear * 12; // one month period
+		emi = (principalAmount * rateOfIntrest * (float)Math.Pow(1 + rateOfIntrest, timeInYear))
 			/ (float)(Math.Pow(1 + rateOfIntrest, timeInYear) - 1);
 	
 		return (emi);
