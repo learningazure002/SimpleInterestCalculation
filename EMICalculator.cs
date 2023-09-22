@@ -2,7 +2,7 @@
 using System;
 
 public class EMICalculator {
-	
+	int x;
 	// Function to calculate EMI
 	public static float GetCalculatedEmi(float principalAmount, float rateOfIntrest, float timeInYear)
 	{
